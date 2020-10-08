@@ -11,6 +11,9 @@ variable "region" {
 variable "availabilityZone" {
      default = "ap-southeast-1a"
 }
+variable "availabilityZoneWindows" {
+     default = "ap-southeast-1b"
+}
 variable "instanceTenancy" {
     default = "default"
 }
@@ -25,6 +28,9 @@ variable "vpcCIDRblock" {
 }
 variable "subnetCIDRblock" {
     default = "10.0.1.0/24"
+}
+variable "subnetCIDRblockWindows" {
+    default = "10.0.2.0/24"
 }
 variable "destinationCIDRblock" {
     default = "0.0.0.0/0"
